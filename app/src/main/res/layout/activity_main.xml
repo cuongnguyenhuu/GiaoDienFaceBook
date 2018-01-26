@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
+<!--tạo ra ImageView để chứa logo-->
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:background="@drawable/image_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<!--tạo input text để nhập email hoặc số điện thoại-->
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/round_border"
+        android:hint="@string/hint_email_phone"
+        />
+<!--tạo input text để nhập mật khẩu-->
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/round_border"
+        android:hint="@string/hint_pass" />
+<!--tạo button để đăng nhập-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border_2"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />
+<!--tạo text view để đăng kí-->
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_sign_up"
+        android:layout_alignRight="@+id/btn_sign_up"
+        android:layout_alignTop="@+id/btn_sign_up"
+        app:srcCompat="@drawable/dau_hoi" />
+
+</RelativeLayout>
